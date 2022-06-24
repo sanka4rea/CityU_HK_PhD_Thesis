@@ -4,11 +4,11 @@
 <font size=3>
 
 1. [Preface](#Preface)
-2. [Important Notes](#Notes)
-3. [Disclaimer](#Disclaimer)
-4. [Prerequisites and Recommendation](#Prerequisites)
+2. [Important Notes](#ImportantNotes)
+3. [Declaration](#Declaration)
+4. [Prerequisites and Recommendation](#PrereqPrerequisitesandRecommendationuisites)
 5. [Usage](#Usage)
-6. [Q&A](#Q&A)
+6. [FAQ](#FAQ)
 
 
 ## <u>Preface</u>
@@ -21,14 +21,14 @@ On the basis of meeting the university's requirements, this template has been **
 
 As the format/requirements of the thesis may change, please check the latest [**Guidebook for Research Degree Studies**](https://www.sgs.cityu.edu.hk/student/rpg/studentGuideBook) first. 
 
-## <u>Disclaimer</u>
+## <u>Declaration</u>
 Although the thesis which was created from this template meet the requirements and passed the examination, it is **not an official template**. Use this template at your own risk.
 
 All the figures/table in this repository are collected from the Internet, only for display use, not for commercial use. If there is any infringement, please contact to delete.
 
 ## <u>Prerequisites and Recommendation</u>
 
-- **Fonts**: MingLiU/細明體 (or PMingLiU/新細明體), the .ttf file could be found in the [./Prerequisites folder/PMingLiU.ttf](./Prerequisites/). Make sure the font been installed system-wide: 1. Run the file under administrator permission or install for all users. 2. Or load the file from seting--fonts.  Details could be found in [Q&A](#Q&A)
+- **Fonts**: MingLiU/細明體 (or PMingLiU/新細明體), the .ttf file could be found in the [./Prerequisites folder/PMingLiU.ttf](./Prerequisites/). Make sure the font been installed system-wide: 1. Run the file under administrator permission or install for all users. 2. Or load the file from seting--fonts.  Details could be found in [FAQ](#FAQ))
 
 - **Office Word** for manuscript editing. (I prefer .docx for manuscript editing with citation comments, then copy the words to .tex) 
   
@@ -36,7 +36,7 @@ All the figures/table in this repository are collected from the Internet, only f
 
 - **PDF Reader**: **SumatraPDF** for Two-way search (external and internal view) on PDF and Tex. <br>
   
-The installation and setting of VScode and SumatrPDF could refer to: [Workflow1](https://zhuanlan.zhihu.com/p/166523064), [Workflow2](https://blog.csdn.net/weixin_43356770/article/details/104035291). [SumatraPDF setting](https://zhuanlan.zhihu.com/p/95330916).
+The installation and setting of VScode and SumatrPDF could refer to: [Workflow1](https://zhuanlan.zhihu.com/p/166523064), [Workflow2](https://blog.csdn.net/weixin_43356770/article/details/104035291), [SumatraPDF setting](https://zhuanlan.zhihu.com/p/95330916).
 
 The setting file of my VScode could be found in [./Prerequisites folder/settings.json](./Prerequisites/). (Remember to change the SumatraPDF.exe path.)
 
@@ -53,7 +53,7 @@ Notice: the command line which works for me in SumatrPDF is: setting--items--Set
 - **Formula to LaTex format:** online tools to easily generate LaTex formula. [One for example](https://www.hostmath.com/)
   
 - **Bibliography tools**:
-  - <u>Doi to BibTeX</u>: Easy generation of citations in BibTeX format from digital object identifiers (DOIs). [doi2bib](https://www.doi2bib.org/bib/10.3892/ol.2014.2820)
+  - <u>Doi to BibTeX</u>: Easy generation of citations in BibTeX format from digital object identifiers (DOIs). [doi2bib](https://www.doi2bib.org/)
   
   - <u>ISBN to BibTeX for book citation:</u> the ISBN to bib for book citation. [Converter](https://www.bibtex.com/c/isbn-to-bibtex-converter/)
   
@@ -65,7 +65,7 @@ Notice: the command line which works for me in SumatrPDF is: setting--items--Set
 
 Globally setting, such as definition of new environment , format or style, could be found in `PhDThesisPSnPDF.cls` and the layout of the title page, main matter, including of chapters were in the `Current_thesis.tex`. Take a look at the comments first before modification.
 
-To compile, fast run through `Recipe: XeLaTex`, with bibliography: `Recipe:xelatex->bibtex->xelatex*2` in Tex extension of VScode.
+To compile, fast run through `Recipe: XeLaTex`. With bibliography, remember to use: `Recipe:xelatex->bibtex->xelatex*2` in Tex extension of VScode.
 
 ## <u>Modifications and Tips</u>
 
@@ -84,7 +84,7 @@ package: `lipsum` and `math` were used for Placeholder Text.
 Coming Soon!
 
 
-## <u>Q&A</u>
+## <u>FAQ</u>
 
 1. <u>**The font could not be found:**</u> <br>
    Even the PMingLiU.ttf was installed and could be found in C:/WINDOWS/fonts, error still raise like:
@@ -121,7 +121,7 @@ Coming Soon!
 4. <u>What are the various units (**ex, em, in, pt, bp, dd, pc**) expressed in mm?</u>
    <br>
 
-    ![image](https://i.stack.imgur.com/uDZPg.png)<br>
+    ![image](/Figures/uDZPg.png)<br>
     So we could take **1bp as 1pt** (Approximate)
 
 
@@ -137,7 +137,7 @@ Coming Soon!
 
 [CUED PhD thesis template](https://github.com/kks32/phd-thesis-template) by Krishna Kumar is licensed under the [MIT License](LICENSE).
 
-## In the end: Personal feelings
+## In the end: personal feelings
 
 
 </font>
