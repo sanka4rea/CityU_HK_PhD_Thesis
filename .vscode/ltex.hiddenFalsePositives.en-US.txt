@@ -1,0 +1,3 @@
+{"rule":"MORFOLOGIK_RULE_EN_US","sentence":"^\\QChapter 3: In this chapter, we propose a deep learning framework-CRLM-SPA for fully automated tissue classification in routine H E-stained images of colorectal liver metastases (CRLM) through transfer learning from CRC-SPA.\\E$"}
+{"rule":"MORFOLOGIK_RULE_EN_US","sentence":"^\\QWe establish a prognostic model termed the SOF risk-scoring model, which shows comparable performance with the well-known clinical research score (CRS) system in predicting the overall survival of CRLM patients after hepatectomy.\\E$"}
+{"rule":"MORFOLOGIK_RULE_EN_US","sentence":"^\\QBesides, the SOF risk score showes the potential to predict the benefit of adjuvant chemotherapy after resection of CRLM.\\E$"}
