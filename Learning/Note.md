@@ -40,7 +40,7 @@ Package geometry (or hyperref or some graphics drivers like pdftex.def or …) s
 
 ### Problem 4:
 
-How does \fontsize{}{} work?
+How does \fontsize{}{} work? [Ref 1](https://tex.stackexchange.com/questions/148508/how-does-fontsize-work) [Ref 2](https://tex.stackexchange.com/questions/48276/latex-specify-font-point-size)
 
     \fontsize{size}{skip}
     # Set font size. The first parameter is the font size to switch to; 
