@@ -12,22 +12,22 @@ package: `lipsum` and `math` were used for Placeholder Text.
 \usepackage[math]{blindtext}
 ```
 
-#### 1. Title page
+### 1. Title page
 It is needed to modify the margin size with very long/short title.
 Configurations start from `line 636 of section Title Page in PhDThesisPSnPDF.cls`.
 `\vspace{xxbp}` was used for the margin setting. More details about `ex, em, in, pt, bp, dd, pc` could be found in [FAQ](#faq).
 
-#### 2. Adding Copyright Declaration
+### 2. Adding Copyright Declaration
 - Set the right environment as `PhDThesisPSnPDF.cls` first
 - Proper usage of `\vspace*{\fill}`. `\textcopyright` for circle c 
 - details on [rights.tex](../Front/rights.tex)
 
-#### 3. Unifying the font size, left asign of the Front sections
+### 3. Unifying the font size, left asign of the Front sections
 Including: ABSTRACT, ACKNOWLEDGEMENTS, LIST OF PUBLICATIONS, LIST OF ABBREVIATIONS, LIST OF FIGURES, LIST OF TABLES, References
 Set name of each section using command like: `\newcommand{\@rightstitle}{COPY RIGHT}`
 Set to: uppercase, left asign, unify the font size
 
-#### 4. Adding header for the Front sections
+### 4. Adding header for the Front sections
 Setting in each environment in the `PhDThesisPSnPDF.cls`
 ```latex
 \pagestyle{fancy} % \thispagestyle{plain}
@@ -41,7 +41,7 @@ Notice:
 - **`\fancyhead[LE,RO]{ABSTRACT}` not work**, seem `E` for even page and `O` for odd page not work for alphabet page numbering. Using `\isodd{\value{page}}` to check the odd/even page.
 - Do not forget the page foot.
 
-#### 5. Fancyhdr setting not work for the last page in an environment 
+### 5. Fancyhdr setting not work for the last page in an environment 
 where the header was not correctly shown.
 Solution: just add `\clearpage` before the end of the environment in each .tex
 [Reference 1](https://tex.stackexchange.com/questions/601020/setting-fancy-headers-and-footers-in-an-environment)
@@ -49,7 +49,7 @@ Solution: just add `\clearpage` before the end of the environment in each .tex
 [Reference 2](https://tex.stackexchange.com/questions/629292/fancyhdr-not-showing-up-on-all-pages-of-appendix)
 <img src="/Figures/fancyhdr2.png" width= 400>
 
-#### 6. More refined examples in publications
+### 6. More refined examples in publications
 underline with the dagger
 ```latex
 % Add underlines in publications
@@ -64,7 +64,7 @@ underline with the dagger
 ```
 ![image](../Figures/publication.png)
 
-#### 7. Long table for `list of abbreviations` and Appendix
+### 7. Long table for `list of abbreviations` and Appendix
 Here, I used long table for the presentation of `list of abbreviations`.
 ```latex
 % long tables for multiple pages in appendix
@@ -84,13 +84,13 @@ References:
 - [Table without borders](https://tex.stackexchange.com/questions/4400/how-can-one-make-a-table-without-borders)
 - [Manually set the length of space/blank: \hspace{4em}](https://juejin.cn/post/6933209801585328142)
 
-#### 8. Change the font size of Chapter
+### 8. Change the font size of Chapter
 ```latex
 \chapternumberfont{\fontsize{20pt}{20pt}\selectfont}
 \chaptertitlefont{\fontsize{18pt}{18pt}\selectfont}
 ```
 
-#### 9. Make chaptermark/short chapter for header
+### 9. Make chaptermark/short chapter for header
 Normally, `\sectionmark{Introduction}` will shown as header. However, pages which begin with a new section shown wrong header (so it seems that the `\sectionmark` is not working in this case)
 **Solution:**
 ```latex
@@ -99,7 +99,7 @@ Normally, `\sectionmark{Introduction}` will shown as header. However, pages whic
 \sectionmark{The example set to short}
 ```
 
-#### 10. Set figure caption in bold:
+### 10. Set figure caption in bold:
 ```latex
 \usepackage[singlelinecheck=false, labelfont=bf]{caption}
 ```
@@ -110,7 +110,7 @@ Normally, `\sectionmark{Introduction}` will shown as header. However, pages whic
 \renewcommand{\figurename}{Fig}  % Fig 1.1
 ```
 
-#### 11. Set title of table above:
+### 11. Set title of table above:
 Put caption before centering or others.
 ```latex
 \begin{table}[htbp!]
@@ -120,7 +120,7 @@ Put caption before centering or others.
 \end{table}
 ```
 
-#### 12. Build own page style if needed
+### 12. Build own page style if needed
 Default pagestyle: plain, fancy.
 Build own style:
 ```latex
@@ -134,7 +134,7 @@ Build own style:
 \pagestyle{definemyself}
 ```
 
-#### 13. Figure place
+### 13. Figure place
 There are two ways to put figures into pages.
 **1. \begin{figure} method could put the figure into any place if the space is enough on the current page.**
 ```latex
@@ -163,7 +163,7 @@ There are two ways to put figures into pages.
 \usepackage[section]{placeins}
 ```
 
-#### 14. Take screenshot of tables as Table
+### 14. Take screenshot of tables as Table
 Table 1 from picture as shown in Table 1.1
 ```latex
 \begin{table}[htbp!]
@@ -174,7 +174,7 @@ Table 1 from picture as shown in Table 1.1
 \end{table}
 ```
 
-#### 15. Bibliography style
+### 15. Bibliography style
 To use the conventional natbib style referencing
 Bibliography style previews: https://www.overleaf.com/learn/latex/Bibtex_bibliography_styles
 ```latex
@@ -184,7 +184,7 @@ Bibliography style previews: https://www.overleaf.com/learn/latex/Bibtex_bibliog
 % \bibliographystyle{plainnat} % use this to have URLs listed in References
 ```
 
-#### 16. Add spaces between paragraphs
+### 16. Add spaces between paragraphs
 ```latex
 \usepackage{parskip}
 \setlength{\parskip}{1em} % 0.5em
@@ -195,7 +195,7 @@ Bibliography style previews: https://www.overleaf.com/learn/latex/Bibtex_bibliog
 %\setlist[enumerate,itemize,description]{topsep=0em}
 ```
 
-#### 17. Tools
+### 17. Tools
 - **Excel/CSV to LaTex format:** Easy generation of tables in Latex format manually or from Excel or CSV files.
   - https://tableconvert.com/csv-to-latex
   - https://www.tablesgenerator.com/
