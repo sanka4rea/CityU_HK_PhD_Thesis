@@ -80,6 +80,7 @@ Here, I used long table for the presentation of `list of abbreviations`.
 \bottomrule
 \end{longtable}
 ```
+Details in [Appendix.tex](../Chapters/appendix1.tex)
 References:
 - [Table without borders](https://tex.stackexchange.com/questions/4400/how-can-one-make-a-table-without-borders)
 - [Manually set the length of space/blank: \hspace{4em}](https://juejin.cn/post/6933209801585328142)
@@ -90,8 +91,8 @@ References:
 \chaptertitlefont{\fontsize{18pt}{18pt}\selectfont}
 ```
 
-### 9. Make chaptermark/short chapter for header
-Normally, `\sectionmark{Introduction}` will shown as header. However, pages which begin with a new section shown wrong header (so it seems that the `\sectionmark` is not working in this case)
+### 9. Make sectionmark/short-section for header
+Normally, `\sectionmark{XXXXXXXX}` will shown as header. However, pages which begin with a new section shown wrong header (so it seems that the `\sectionmark` is not working in this case)
 **Solution:**
 ```latex
 \section[The example of setting headers with longlonglonglong title]{The example of setting headers with longlonglonglong title %
@@ -124,18 +125,19 @@ Put caption before centering or others.
 Default pagestyle: plain, fancy.
 Build own style:
 ```latex
- \fancypagestyle{definemyself}{
+\fancypagestyle{definemyself}{
 	\renewcommand{\headrulewidth}{0.5pt}
-       \renewcommand{\footrulewidth}{0pt}
-       \addtolength{\headheight}{0.5pt}
-       \fancyhead[LE,RO]{\leftmark}
-       \fancyhead[RE,LO]{WHAT I WANT TO SEE}}
+  \renewcommand{\footrulewidth}{0pt}
+  \addtolength{\headheight}{0.5pt}
+  \fancyhead[LE,RO]{\leftmark}
+  \fancyhead[RE,LO]{WHAT I WANT TO SEE}}
 }
 \pagestyle{definemyself}
 ```
 
 ### 13. Figure place
 There are two ways to put figures into pages.
+
 **1. \begin{figure} method could put the figure into any place if the space is enough on the current page.**
 ```latex
 \begin{figure}[htbp!]
@@ -164,7 +166,8 @@ There are two ways to put figures into pages.
 ```
 
 ### 14. Take screenshot of tables as Table
-Table 1 from picture as shown in Table 1.1
+For some complex table, I just take the screenshot of it as the representation of it. 
+For example, Table 1 from picture as shown in Table 1.1
 ```latex
 \begin{table}[htbp!]
   \caption[The name which will be shown on TOC]{The Figure names and figure legends. \textbf{(a)} ahahda dqwe ead asd. \textbf{(b-d)} ahahda dqwe ead asd.}
