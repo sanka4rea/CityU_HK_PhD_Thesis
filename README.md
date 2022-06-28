@@ -10,7 +10,7 @@
   - [Declaration](#declaration)
   - [Prerequisites and Recommendation](#prerequisites-and-recommendation)
   - [Usage](#usage)
-  - [Modifications and Tips](#modifications-and-tips)
+  - [Changes and Tips](#changes-and-tips)
   - [FAQ](#faq)
   - [License](#license)
   - [Some words](#some-words)
@@ -72,7 +72,7 @@ Globally setting, such as definition of new environment , format or style, could
 
 To compile, fast run through `Recipe: XeLaTex`. With bibliography, remember to use: `Recipe:xelatex->bibtex->xelatex*2` in Tex extension of VScode.
 
-## Modifications and Tips
+## Changes and Tips
 
 This part covers the changes from the [huwan/CityU_Thesis](https://github.com/huwan/CityU_Thesis) to match the style of our laboratory with lots of **personal preferences**
 
@@ -111,7 +111,14 @@ Details of changes could be found in [/Changes](/Changes/)
     \setlength{\parindent}{0pt}
     ```
 
-3. <ins>**How is 14pt giving font size smaller than 12pt**</ins>
+3. <ins>Set spacing as 1.5/2 line spacing</ins>
+   discussion: https://latex.org/forum/viewtopic.php?t=28685
+   Reason: the standard line skip means a factor of 1.2 (such as font height 10pt, base line skip 12pt). Multiply with \linespread, so you get `1.25*1.2 = 1.5`, so one-half.
+   so, double spacing means `1.667*1.2=2`
+   ```latex
+   \renewcommand\baselinestretch{1.667}
+   ```
+4. <ins>**How is 14pt giving font size smaller than 12pt**</ins>
     
     **Solved:** Document class article only supports **10pt, 11pt, and 12pt**. The default is 10pt. Option 14pt is unknown, therefore you are getting 10pt.
 
@@ -123,13 +130,13 @@ Details of changes could be found in [/Changes](/Changes/)
     It supports 8pt, 9pt, 10pt, 11pt, 12pt, 14pt, 17pt and 20pt.
     Package geometry (or hyperref or some graphics drivers like pdftex.def or …) set the paper size to the output media.
 
-4. <ins>What are the various units (**ex, em, in, pt, bp, dd, pc**) expressed in mm?</ins>
+5. <ins>What are the various units (**ex, em, in, pt, bp, dd, pc**) expressed in mm?</ins>
    <br>
 
     ![image](/Figures/uDZPg.png)<br>
     So we could take **1bp as 1pt** (Approximate)
 
-5. <ins>How does \fontsize{}{} work?</ins> [Ref 1](https://tex.stackexchange.com/questions/148508/how-does-fontsize-work) [Ref 2](https://tex.stackexchange.com/questions/48276/latex-specify-font-point-size)
+6. <ins>How does \fontsize{}{} work?</ins> [Ref 1](https://tex.stackexchange.com/questions/148508/how-does-fontsize-work) [Ref 2](https://tex.stackexchange.com/questions/48276/latex-specify-font-point-size)
 ```latex
     \fontsize{size}{skip}
     # Set font size. The first parameter is the font size to switch to; 
@@ -144,7 +151,7 @@ Details of changes could be found in [/Changes](/Changes/)
     {\fontsize{1cm}{1cm}\selectfont}{\expandafter\MakeUppercase\expandafter{\english\@university} \par}
 ```
 
-6. <ins>How to allow figure caption break into two pages?</ins>
+7. <ins>How to allow figure caption break into two pages?</ins>
 tried: 
 - https://tex.stackexchange.com/questions/399698/how-to-get-figure-caption-to-span-multiple-pages-without-having-to-switch-every
 caption可以分段，但是图像会严格插入位置，文字不足时导致有空白

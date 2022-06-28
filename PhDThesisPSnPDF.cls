@@ -819,7 +819,7 @@ wish to left align your text}
 }
 
 % ****************************** Publications ********************************
-% 在toc后面，使用\thispagestyle{plain} 页眉自动生成为table of content
+% 在toc后面，使用\thispagestyle{plain} 页眉自动生成为`table of content'
 \newenvironment{publications}{
 \cleardoublepage
 \phantomsection
