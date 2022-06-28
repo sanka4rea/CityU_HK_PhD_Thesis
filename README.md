@@ -10,7 +10,7 @@
   - [Declaration](#declaration)
   - [Prerequisites and Recommendation](#prerequisites-and-recommendation)
   - [Usage](#usage)
-  - [<ins>Modifications and Tips</ins>](#insmodifications-and-tipsins)
+  - [Modifications and Tips](#modifications-and-tips)
   - [FAQ](#faq)
   - [License](#license)
   - [Some words](#some-words)
@@ -72,7 +72,7 @@ Globally setting, such as definition of new environment , format or style, could
 
 To compile, fast run through `Recipe: XeLaTex`. With bibliography, remember to use: `Recipe:xelatex->bibtex->xelatex*2` in Tex extension of VScode.
 
-## <ins>Modifications and Tips</ins>
+## Modifications and Tips
 
 This part covers the changes from the [huwan/CityU_Thesis](https://github.com/huwan/CityU_Thesis) to match the style of our laboratory with lots of **personal preferences**
 
@@ -195,7 +195,6 @@ caption可以分段，但是图像会严格插入位置，文字不足时导致�
 [CUED PhD thesis template](https://github.com/kks32/phd-thesis-template) by Krishna Kumar is licensed under the [MIT License](LICENSE).
 
 ## Some words
-It's my first try to LaTex
-
+It's my first try to LaTex. I have heared the advantages of LaTex for a long time but was hesitate to have a try because of the fear (畏难情绪) of the grammar learning. But when I took 2-3 days for the basic learning of the LaTex and keep google searching to got the format/layout which I want during the thesis writing, the joy came with it and I grew to enjoy the process. On the day of thesis completion, I was very happy as the layout/details/content of the thesis is just what I want and that was my own unique thesis. It is hard to cover the four PhD years into a single thesis, no matter the researches, the behind failure/duty/nervousness/success, as well as the people who I spent a lot of time with. Future is unknown, but the passed four-years did change me alot.
 
 </font>
