@@ -204,4 +204,5 @@ caption可以分段，但是图像会严格插入位置，文字不足时导致�
 ## Some words
 It's my first try to LaTex. I have heared the advantages of LaTex for a long time but was hesitate to have a try because of the fear (畏难情绪) of the grammar learning. But when I took 2-3 days for the basic learning of the LaTex and keep google searching to got the format/layout which I want during the thesis writing, the joy came with it and I grew to enjoy the process. On the day of thesis completion, I was very happy as the layout/details/content of the thesis is just what I want and that was my own unique thesis. It is hard to cover the four PhD years into a single thesis, no matter the researches, the behind failure/duty/nervousness/success, as well as the people who I spent a lot of time with. Future is unknown, but the passed four-years did change me alot.
 
+© 2022 · Copyright© 2022 Lin QI. All rights reserved.
 </font>
